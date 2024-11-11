@@ -1,7 +1,7 @@
 # Introduction
 * " The goal of this mini-challenge is to build a website that takes a URL as input, scrapes the content of that site, and generates a question with multiple-choice options based on the content. The aim is to classify the visitor’s intent. "
 
-![video](https://www.youtube.com/watch?v=b2zt1jSTDho)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/b2zt1jSTDho)](https://youtu.be/b2zt1jSTDho)
 
 # Build & Run
 * Nevigate to "back" directory. 
