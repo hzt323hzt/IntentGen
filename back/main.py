@@ -14,7 +14,8 @@ from starlette.authentication import (
 )
 import traceback
 import re
-
+app = FastAPI()
+ip_address =  "http://localhost:8000"
 origins = [
     "http://localhost:8000",
     "http://localhost:3000",
@@ -103,6 +104,7 @@ async def root():
 async def read_item(url: str):
     print(url)
     t = callApi(prepare(url))
+    print(t)
     matches = re.findall(r'\[(.*?)\]', t)
     if len(matches) == 0: 
         return []    

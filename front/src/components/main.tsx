@@ -28,6 +28,7 @@ function Homepage(){
         if(pageContent.questions.length !=0){
           setPageState(2);
         }else{
+          alert("Incorrect result from AI api ")
           setPageState(0);
         }
       } catch (error) {
@@ -175,7 +176,7 @@ function Homepage(){
       sx={(theme) => ({
         height: 30
         })}> </Box>
-      <Button disabled={pageState==2} size="lg" onClick={()=>{setPageState(0)}}>Submit your answer</Button>
+      <Button disabled={pageState==2} size="lg" onClick={()=>{alert("Success!");setPageState(0)}}>Submit your answer</Button>
       </Box></Fade>):<div/>}
     </Box>);
 }

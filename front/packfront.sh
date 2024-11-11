@@ -1,3 +1,3 @@
 #! /bin/bash
-cd ../back-python
-tar -czvf front.tar front
+cd ../back
+tar -czvf static.tar static

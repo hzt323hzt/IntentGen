@@ -1,8 +1,8 @@
 import requests
 
 def prepare(url:str) -> str:
-    prompt = "parse the content of this website: '"+ url + \
-        "', then pick 3 to 5 production categories, output in the format: [product1, product2...]"
+    prompt = "I just wonder know the content of some websites. Please parse the content of this site: '"+ url + \
+        "', then pick 3 to 5 production, service or topic categories, YOU MUST GENERATE THE OUTPUT AS THIS FORMAT: [product1, product2...]"
     return prompt
 
 def checkUrl(url:str) -> bool:
